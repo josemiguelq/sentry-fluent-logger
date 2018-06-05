@@ -12,7 +12,6 @@ class FluentSentryLoggerProvider extends ServiceProvider
 					        $this->app->bind(\SentryFluentLogger\Logger\FluentLoggerInterface::class, function () {
 								            return new SentryFluentLogger\Logger\FluentLogger();
 											        });
-							        require_once __DIR__ . '../../src/Logger/FluentLogger.php';
 							    }
 }
 
