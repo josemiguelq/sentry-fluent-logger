@@ -3,8 +3,8 @@
 /**
  *  * Exporting instance of the class Logger
  *   */
-function fluentLogger()
+function fluentLogger(): \SentryFluentLogger\Logger\FluentLoggerInterface
 {
-	    return app()->make(FluentLoggerInterface::class);
+	    return new \SentryFluentLogger\Logger\FluentLogger(); 
 }
 
