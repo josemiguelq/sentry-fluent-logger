@@ -1,16 +1,17 @@
 <?php
 
-use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\App;
+use Illuminate\Support\ServiceProvider;
 
-class SentryFluentLoggerProvider extends ServiceProvider
+class FluentSentryLoggerProvider extends ServiceProvider
 {
-    public function register()
-    {
-		App::bind('sentry-fluent', function () {
-            return new SentryFluentLogger\Logger\LogHelper();
-        });
-        require_once __DIR__ . '../../src/Logger/FluentLogger.php';
-    }
+	    public function register()
+			    {
+					        $this->app->bind(\SentryFluentLogger\Logger\FluentLoggerInterface::class, function () {
+								            return new SentryFluentLogger\Logger\FluentLogger();
+											        });
+							        require_once __DIR__ . '../../src/Logger/FluentLogger.php';
+							    }
 }
+
 

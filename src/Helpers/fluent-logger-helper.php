@@ -1,10 +1,10 @@
 <?php
 
-use Illuminate\Support\Facades\App;
-
 /**
- * Exporting instance of the class Logger
- */
-function fluentLogger(){
-    return App::make('sentry-fluent');
+ *  * Exporting instance of the class Logger
+ *   */
+function fluentLogger()
+{
+	    return app()->make(FluentLoggerInterface::class);
 }
+
