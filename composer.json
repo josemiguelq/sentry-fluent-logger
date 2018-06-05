@@ -5,6 +5,7 @@
     "sentry",
     "logs"
   ],
+  "license": "MIT",
   "type": "package",
   "require": {
     "illuminate/log": "^5.6",
