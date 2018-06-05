@@ -1,11 +1,26 @@
 {
-	"name": "sentry-fluent-logger",
-	"description": "A fluent logger",
-	"keywords": ["sentry", "logs"],
-	"type": "package",
-
-    "require": {
-        "illuminate/log": "^5.6",
-        "monolog/monolog": "^1.23"
+  "name": "sentry-fluent-logger",
+  "description": "A fluent logger",
+  "keywords": [
+    "sentry",
+    "logs"
+  ],
+  "type": "package",
+  "require": {
+    "illuminate/log": "^5.6",
+    "monolog/monolog": "^1.23"
+  },
+  "files": [
+    "src/Helpers/fluent-logger-helper.php"
+  ],
+  "autoload": {
+    "psr-4": {
+      "SentryFluentLogger\\": "src/"
     }
+  },
+  "autoload-dev": {
+    " psr-4": {
+      "SentryFluentLogger\\Tests\\": "tests/"
+    }
+  }
 }
