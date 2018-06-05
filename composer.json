@@ -10,10 +10,10 @@
     "illuminate/log": "^5.6",
     "monolog/monolog": "^1.23"
   },
-  "files": [
-    "src/Helpers/fluent-logger-helper.php"
-  ],
   "autoload": {
+	"files": [
+	   "src/Helpers/fluent-logger-helper.php"
+	],
     "psr-4": {
       "SentryFluentLogger\\": "src/"
     }
