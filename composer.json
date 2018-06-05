@@ -1,5 +1,5 @@
 {
-  "name": "sentry-fluent-logger",
+  "name": "josemiguelq/sentry-fluent-logger",
   "description": "A fluent logger",
   "keywords": [
     "sentry",
